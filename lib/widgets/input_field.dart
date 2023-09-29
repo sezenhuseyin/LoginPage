@@ -4,7 +4,7 @@ class InputField extends StatelessWidget {
   final String label;
   final String content;
 
-  InputField({this.label, this.content});
+  InputField({required this.label, required this.content});
 
   @override
   Widget build(BuildContext context) {
@@ -33,13 +33,13 @@ class InputField extends StatelessWidget {
                   contentPadding: EdgeInsets.all(10.0),
                   border: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Colors.blue[50],
+                      color: Colors.blue[50]!,
                     ),
                     borderRadius: BorderRadius.circular(5.0),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
-                      color: Colors.blue[50],
+                      color: Colors.blue[50]!,
                     ),
                     borderRadius: BorderRadius.circular(5.0),
                   ),
